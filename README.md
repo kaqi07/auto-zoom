@@ -35,6 +35,11 @@ UV_HTTP_TIMEOUT=300 uv sync
 uv run -m zoom_automation.meeting --topic "demo" --name "bot" --open start
 ```
 
+一条命令：创建会议 + 打开 Zoom + 推流视频（按 Ctrl+C 停止推流）：
+```bash
+uv run -m zoom_automation.auto --topic "demo" --name "bot" --open start --video /path/to/video.mp4 --loop
+```
+
 把视频文件当作摄像头输出（先在 Zoom 里把摄像头切到对应的虚拟摄像头设备）：
 ```bash
 uv run -m zoom_automation.virtual_camera --video /path/to/video.mp4 --loop
