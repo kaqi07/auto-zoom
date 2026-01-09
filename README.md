@@ -31,14 +31,14 @@ Create + open meeting:
 uv run -m zoom_automation.meeting --topic "demo" --name "bot" --open start
 ```
 
-All-in-one: create meeting + open Zoom + stream video (Ctrl+C to stop streaming):
-```bash
-uv run -m zoom_automation.auto --topic "demo" --name "bot" --open start --video <path_to_video> --loop
-```
-
 Stream video to virtual camera:
 ```bash
 uv run -m zoom_automation.virtual_camera --video <path_to_video> --loop
+```
+
+All-in-one: create meeting + open Zoom + stream video (Ctrl+C to stop streaming):
+```bash
+uv run -m zoom_automation.auto --topic "demo" --name "bot" --open start --video <path_to_video> --loop
 ```
 
 Notes:
