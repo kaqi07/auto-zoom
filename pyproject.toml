@@ -1,0 +1,6 @@
+[project]
+name = "zoom-automation"
+version = "0.1.0"
+description = "Simple Zoom meeting automation scripts."
+requires-python = ">=3.10"
+dependencies = ["requests", "python-dotenv", "opencv-python", "pyvirtualcam"]
